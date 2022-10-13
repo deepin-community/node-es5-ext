@@ -1,0 +1,35 @@
+Source: node-es5-ext
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , node-es6-iterator <!nocheck>
+ , node-es6-symbol <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-es5-ext
+Vcs-Git: https://salsa.debian.org/js-team/node-es5-ext.git
+Homepage: https://github.com/medikoo/es5-ext
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-es5-ext
+Architecture: all
+Depends: ${misc:Depends}
+ , node-es6-iterator
+ , node-es6-symbol
+ , nodejs
+Provides: ${nodejs:Provides}
+Description: ECMAScript extensions and shims
+ Shims for upcoming ES6 standard and other goodies implemented strictly with
+ ECMAScript conventions in mind.
+ .
+ It's designed to be used in compliant ECMAScript 5 or ECMAScript 6
+ environments. Older environments are not supported, although most of the
+ features should work with correct ECMAScript 5 shim on board.
+ .
+ When used in ECMAScript 6 environment, native implementation (if valid) takes
+ precedence over shims.
+ .
+ Node.js is an event-based server-side JavaScript engine.
