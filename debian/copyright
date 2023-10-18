@@ -3,6 +3,7 @@ Upstream-Name: es5-ext
 Upstream-Contact: https://github.com/medikoo/es5-ext/issues
 Source: https://github.com/medikoo/es5-ext#readme
  https://github.com/medikoo/next-tick/tags
+Files-Excluded: _postinstall.js
 
 Files: *
 Copyright: 2011-2020 Mariusz Nowak <medyk@medikoo.com> (https://www.medikoo.com/)
@@ -10,7 +11,7 @@ License: Expat
 
 Files: debian/*
 Copyright: 2017 Pirate Praveen <praveen@debian.org>
- 2020 Xavier Guimard <yadd@debian.org>
+ 2020 Yadd <yadd@debian.org>
 License: Expat
 
 Files: string/#/normalize/shim.js

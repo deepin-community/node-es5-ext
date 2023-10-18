@@ -1,0 +1,9 @@
+Description: fix test
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-04-08
+
+--- /dev/null
++++ b/test/index.js
+@@ -0,0 +1 @@
++// Workaround greedy tad tests resolution
